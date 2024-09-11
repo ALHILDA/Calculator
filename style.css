@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Free\ Photo\ _\ Abstract\ gradient\ neon\ lights.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.calculator{
+    background: rgb(218, 217, 214);
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: -8px -8px 15px rgba(238, 219, 219, 0.2);
+    
+}
+.calculator form input{
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),5px 5px 15px rgba(0, 0, 0, 0.2);
+    font-size: 22px;
+    color: white;
+    margin: 10px;
+    cursor: pointer;
+    position: relative;
+    font-size: 28px;
+    padding: 15px 20px;
+    transition: color 0.30s;
+}
+form .calculate{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+form .calculate input{
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+}
+
+.calculator form input::after{
+    position: absolute;
+    content: "";
+    inset: 0;
+    scale: 1 0;
+    z-index: -1;
+    transition: 0.35s;
+    border-radius: 12px;
+
+}
+.calculator form input:hover{
+    color: rgb(35, 4, 4);
+}
+.calculator form input:hover::after{
+    scale: 1 1;
+}
