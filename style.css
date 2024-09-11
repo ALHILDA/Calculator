@@ -62,7 +62,7 @@ form .calculate input{
 
 }
 .calculator form input:hover{
-    color: rgb(35, 4, 4);
+    color: red;
 }
 .calculator form input:hover::after{
     scale: 1 1;
